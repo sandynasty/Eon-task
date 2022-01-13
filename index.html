@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Eon Assignment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans&family=Titillium+Web&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Nav bar  -->
+
+        <div class="container">
+            <nav class="navbar navbar-light mt-3">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo-main" /></a>
+
+                <a class="nav-link start-button button_slide slide_left" href="https://www.iamsandy.com/">Start for Free</a>
+            </nav>
+        </div>
+        <!-- Nav bar End -->
+
+        <!-- Main Content  -->
+        <div class="container">
+            <div class="row">
+                <div class="shaddow"></div>
+                <div class="col-xs-12 col-md-5 login-form order-md-12">
+                    <form class="mt-10">
+                        <h1 class="text-white">Sign In</h1>
+                        <div class="content">
+                            <div class="input-field">
+                                <input type="email" placeholder="Email*" autocomplete="nope" />
+                            </div>
+                            <div class="input-field">
+                                <input type="password" placeholder="Password*" autocomplete="new-password" />
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="button_slide slide_diagonal">Next &#8594;</button>
+                        </div>
+                    </form>
+
+                    <span id="additional-links" class="text-right text-white additional-links">
+                        <a href="#" class="link">Forgot Password?</a> <br />
+                        Not a Member? - <a href="#" class="link">Start for Free</a>
+                    </span>
+                </div>
+
+                <div class="col-xs-12 col-md-7 animation-holder order-md-1">
+                    <!-- lotie-animation  -->
+                    <!-- NB- The Lotie-animation does not work on local HTML, the JSON file must be stored on a server for local use -->
+
+                    <div class="lotie-animation">
+                        <lottie-player src="animation.json" background="transparent" speed="1" style="width: 100%; height: 100vh;" loop autoplay></lottie-player>
+                    </div>
+
+                    <!-- lotie-animation End -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Content End  -->
+
+        <script src="js/lottie-player.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
